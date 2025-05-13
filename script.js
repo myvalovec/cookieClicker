@@ -5,9 +5,9 @@ function klikniNaCookie() {
 }
 
 function naPana() {
-    document.getElementById("cookie").src = "./orbazky/ministr.jpg"
+    document.getElementById("cookie").src = "./obrazky/ministr.jpg"
 }
 
 function spink() {
-    document.getElementById("cookie").src = "./orbazky/spink.jpg"
+    document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }

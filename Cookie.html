@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jan Novák a Petr Svoboda">
+    <meta name="keywords" content="cookie, klikání, hra, projekt">
+    <meta name="description" content="Herní stránka projektu Cookie Clicker pro školní účely.">
+
+    <title>Cookie Clicker - Hra</title>
+
+    <link rel="icon" type="image/jpeg" href="a.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        let body = 0;
+        function klikniNaCookie() {
+            body++;
+            document.getElementById("body").innerText = body;
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #fef6e4;
+        }
+        h1 {
+            color: #a0522d;
+        }
+        #cookie {
+            width: 500px;
+            cursor: pointer;
+        }
+        #body {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .zpet {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d2691e;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .zpet:hover {
+            background-color: #a0522d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="IMG_5154.png" alt="Logo Cookie Clicker" style="width: 100px;">
+        <h1>Hraj Cookie Clicker!</h1>
+    </header>
+
+    <p>Klikni na sušenku a sbírej body!</p>
+
+    <img src="IMG_5154.png" alt="Sušenka" id="cookie" onclick="klikniNaCookie()">
+
+    <p>Počet bodů: <span id="body">0</span></p>
+
+    <a class="zpet" href="Index.html">← Zpět na úvodní stránku</a>
+</body>
+</html>

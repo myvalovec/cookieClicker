@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jirka Herda, Luďek Hanzlík a Jan Brichcín">
+    <meta name="keywords" content="cookie, klikání, hra, projekt">
+    <meta name="description" content="Jednoduchý projekt Cookie Clicker vytvořený pro školní účely.">
+    
+    <title>Cookie Clicker - Projekt</title>
+
+    <link rel="icon" type="image/jpeg" href="a.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function zobrazDatum() {
+            const dnes = new Date();
+            document.getElementById("datum").innerText = dnes.toLocaleDateString();
+        }
+
+        function zmenBarvy() {
+            document.body.classList.toggle("tmave");
+        }
+
+        window.onload = zobrazDatum;
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        .tmave {
+            background-color: #222;
+            color: white;
+        }
+        header img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="a.jpg" alt="Logo Cookie Clicker">
+        <h1>Projekt Cookie Clicker</h1>
+    </header>
+
+    <p>Vítejte na stránce našeho školního projektu Cookie Clicker. Tento projekt je jednoduchá hra, ve které klikáte na sušenku a sbíráte body.</p>
+
+    <h2>Co projekt obsahuje</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Struktura celé stránky a obsahu.</dd>
+        <dt>CSS</dt>
+        <dd>Stylování vzhledu stránky.</dd>
+        <dt>JavaScript</dt>
+        <dd>Interaktivní prvky jako klikání a změna barvy.</dd>
+    </dl>
+
+    <h2>Autoři projektu</h2>
+    <p><strong>Jméno:</strong> Jirka Herda</p>
+    <p><strong>Jméno:</strong> Luďek Hanzlík</p>
+    <p><strong>Jméno:</strong> Jan Brichcín</p>
+
+    <p>Dnešní datum: <span id="datum"></span></p>
+
+    <button onclick="zmenBarvy()">Změnit barevné schéma</button>
+    <a href="Cookie.html">Přejít na hru</a>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Luděk Hanzík, Jan Brichcín, Jiří Herda">
-    <meta name="keywords" content="cookie, klikání, hra, projekt">
-    <meta name="description" content="Herní stránka projektu Cookie Clicker pro školní účely.">
+    <meta name="keywords" content="ministr, klikání, hra, projekt">
+    <meta name="description" content="Ministr Clicker">
 
     <title>Cookie Clicker - Hra</title>
 
@@ -14,17 +14,56 @@
 
     <script src="script.js"></script>
 
+<<<<<<< HEAD
+=======
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #fef6e4;
+        }
+        h1 {
+            color: #a0522d;
+        }
+        #cookie {
+            height: 300px;
+            cursor: pointer;
+        }
+        #body {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .zpet {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d2691e;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .zpet:hover {
+            background-color: #a0522d;
+        }
+    </style>
+>>>>>>> bd491f4d84e78665fcb9c6b259a708be9cfec6a3
 </head>
 <body>
 
     <header>
+<<<<<<< HEAD
         <img src="IMG_5154.png" alt="Logo Cookie Clicker">
         <h1>Hraj Cookie Clicker!</h1>
+=======
+        <img src="./obrazky/karl.jpg" alt="Logo Ministr Clicker" style="height: 100px;" id = "logo">
+        <!-- <h1>Hraj Ministr Clicker!</h1> -->
+>>>>>>> bd491f4d84e78665fcb9c6b259a708be9cfec6a3
     </header>
 
-    <p>Klikni na sušenku a sbírej body!</p>
+    <p>Klikni na ministra a sbírej body!</p>
 
-    <img src="IMG_5154.png" alt="Sušenka" id="cookie" onclick="klikniNaCookie()">
+    <img src="./obrazky/spink.jpg" alt="Ministr" id="cookie" onclick="klikniNaCookie()" onmouseover="naPana()" onmouseout="spink()">
 
     <p>Počet bodů: <span id="body">0</span></p>
 

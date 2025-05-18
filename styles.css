@@ -30,3 +30,8 @@ section{
 h2{
     font-size: 32px;
 }
+button{
+    border-radius: 10px;
+    padding: 15px;
+    border: solid 1px black;
+}

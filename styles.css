@@ -30,13 +30,16 @@ section{
 h2{
     font-size: 32px;
 }
-
+footer{
+    text-align: center;
+}
 button{
     border-radius: 10px;
     padding: 15px;
     border: solid 1px black;
     display: block;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 a{
@@ -45,5 +48,4 @@ a{
     padding: 30px;
     border-radius: 10px;
     border: solid 1px black;
-    
 } 

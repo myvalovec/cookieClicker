@@ -9,3 +9,7 @@ header{
 h1{
     font-size: 72px;
 }
+#logo{
+    width: 100px;
+    border-radius: 50%;
+}

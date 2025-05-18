@@ -17,7 +17,7 @@ h1{
     width: 300px;
 }
 p{
-
+    text-align: center;
 }
 main{
     display: flex;

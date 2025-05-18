@@ -5,6 +5,10 @@
 body{
     text-align: center;
 }
+#logo{
+    margin: 15px;
+}
 #cookie{
     width: 300px;
+    height: 350px;
 }

@@ -2,9 +2,8 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
-    background-color: burlywood;
-}
+
+
 header{
     width: 100%;
     display: flex;

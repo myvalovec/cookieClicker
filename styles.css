@@ -1,29 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #fef6e4;
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-h1 {
-    color: #a0522d;
+header{
+    width: 100%;
+    display: flex;
 }
-#cookie {
-    width: 500px;
-    cursor: pointer;
-}
-#body {
-    font-size: 24px;
-    font-weight: bold;
-}
-.zpet {
-    margin-top: 30px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d2691e;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-}
-.zpet:hover {
-    background-color: #a0522d;
+h1{
+    font-size: 72px;
 }

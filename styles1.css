@@ -12,3 +12,11 @@ body{
     width: 300px;
     height: 350px;
 }
+a{
+    border: solid 1px black;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}

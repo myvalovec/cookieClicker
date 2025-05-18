@@ -5,13 +5,13 @@
 header{
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 h1{
     font-size: 72px;
 }
 #logo{
-    width: 200px;
-    border-radius: 50%;
+    width: 300px;
 }
 main{
     display: flex;
@@ -20,4 +20,7 @@ main{
 section{
     width: 50%;
     text-align: center;
+}
+h2{
+    font-size: 32px;
 }

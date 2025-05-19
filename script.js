@@ -8,24 +8,27 @@ const upgrades = []
 
 let body = 0;
 function klikniNaCookie() {
-    body++;
-    document.getElementById("body").innerText = body;
+  body++;
+  document.getElementById("body").innerText = body;
 }
 
 function naPana() {
-    document.getElementById("cookie").src = "./obrazky/ministr.jpg"
+  document.getElementById("cookie").src = "./obrazky/ministr.jpg"
 }
 
 function spink() {
-    document.getElementById("cookie").src = "./obrazky/spink.jpg"
+  document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
-function updateLeft() {
-
+function init() {
+  for(i = 0; i <= names.length; i++) {
+    createSquare(i);
+    console.log(i)
+  }
 }
 
 function clicked(number) {
-    upgrades[number].remove();
+  //upgrades[number].remove();
 }
 
 function createSquare(number) {
@@ -72,7 +75,9 @@ function createSquare(number) {
     square.appendChild(textPart);
 
     square.onclick = clicked(number);
-    updates.push(square)
     container.appendChild(square);
+    updates.push(square)
+    
 }
 
+init();

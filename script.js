@@ -2,7 +2,7 @@ let body = 0;
 function klikniNaCookie() {
     body++;
     document.getElementById("body").innerText = body;
-    createSquare("Vojtik", "vojtisek bobicek", "200$", "./obrazky/vojtik.jpg")
+    createSquare("Vojtik", "vojtisek bobicek", "200$", "./obrazky/vojtik.jpg");
 }
 
 function naPana() {
@@ -17,7 +17,7 @@ function createSquare(text1, text2, text3, imageUrl) {
 
     const square = document.createElement('div');
     square.style.width = '200px';
-    square.style.height = '200px';
+    square.style.height = '80px';
     square.style.border = '1px solid black';
     square.style.display = 'flex';
     square.style.cursor = 'pointer';
@@ -27,7 +27,7 @@ function createSquare(text1, text2, text3, imageUrl) {
     textPart.style.display = 'flex';
     textPart.style.flexDirection = 'column';
     textPart.style.justifyContent = 'center';
-    textPart.style.alignItems = 'flex-end';
+    textPart.style.alignItems = 'flex-start';
     textPart.style.paddingRight = '10px';
 
     const t1 = document.createElement('div');
@@ -55,11 +55,13 @@ function createSquare(text1, text2, text3, imageUrl) {
     imagePart.appendChild(img);
 
   // Spojení částí
-    square.appendChild(textPart);
     square.appendChild(imagePart);
+    square.appendChild(textPart);
+    
 
   // Kliknutí
     square.onclick = () => alert('Kliknuto!');
 
     container.appendChild(square);
 }
+

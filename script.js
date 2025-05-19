@@ -34,9 +34,10 @@ function createSquare(text1, text2, text3, imageUrl) {
     const t2 = document.createElement('div');
     t2.style.fontSize = "10px";
     const t3 = document.createElement('div');
-    t1.textContent = text1;
-    t2.textContent = text2;
-    t3.textContent = text3;
+    t3.style.fontWeight = "bold";
+    t1.innerHTML = text1;
+    t2.innerHTML = text2;
+    t3.innerHTML = text3;
 
     textPart.appendChild(t1);
     textPart.appendChild(t2);

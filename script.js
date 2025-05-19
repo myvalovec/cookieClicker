@@ -1,8 +1,15 @@
+const names = ["Vojtik"];
+const images = ["./obrazky/vojtik.jpg"];
+const prices = [10]
+const progress = [0]
+const maxProgress = [10]
+const upgrades = []
+
+
 let body = 0;
 function klikniNaCookie() {
     body++;
     document.getElementById("body").innerText = body;
-    createSquare("Vojtik", "vojtisek bobicek", "200$", "./obrazky/vojtik.jpg");
 }
 
 function naPana() {
@@ -13,7 +20,15 @@ function spink() {
     document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
-function createSquare(text1, text2, text3, imageUrl, onClickFunction) {
+function updateLeft() {
+
+}
+
+function clicked(number) {
+  upgrades[number].remove();
+}
+
+function createSquare(number) {
     const container = document.getElementById('lp');
 
     const square = document.createElement('div');
@@ -32,15 +47,14 @@ function createSquare(text1, text2, text3, imageUrl, onClickFunction) {
     textPart.style.paddingRight = '10px';
 
     const t1 = document.createElement('div');
+    const t2 = document.createElement('div');
     t1.style.fontSize = "30px";
-    const t3 = document.createElement('div');
-    
-    t3.style.fontSize = "20px";
+    t2.style.fontSize = "20px";
     t1.innerHTML = text1;
-    t3.innerHTML = text3;
+    t2.innerHTML = text2;
 
     textPart.appendChild(t1);
-    textPart.appendChild(t3);
+    textPart.appendChild(t2);
 
     const imagePart = document.createElement('div');
     imagePart.style.flex = '1';
@@ -56,9 +70,8 @@ function createSquare(text1, text2, text3, imageUrl, onClickFunction) {
 
     square.appendChild(imagePart);
     square.appendChild(textPart);
-    
 
-    square.onclick = onClickFunction;
+    square.onclick = clicked(number);
 
     container.appendChild(square);
 }

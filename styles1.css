@@ -28,22 +28,23 @@ a{
 
 .container {
     display: flex;
-    width: 100vw; /* využije celou šířku okna */
+    width: 99vw; /* využije celou šířku okna */
     height: auto;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 0px;
     gap: 20px;
 }
 
 .levy-panel,
 .pravy-panel {
-    width: 100vw; /* 20 % šířky obrazovky */
-    background-color: #f0f0f0;
-    padding: 15px;
+    width: 100px; /* 20 % šířky obrazovky */
+    background-color: #ce1b1b;
+    padding: 0px;
+    height: 99vw;
     
 }
 
-.hlavni-obsah {
-    width: 60vw; /* prostřední část */
-}
+
+
+

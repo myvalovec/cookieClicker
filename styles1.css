@@ -1,21 +1,29 @@
-*{
+* {
     font-family: sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
-    text-align: center;
+
+body {
+    background-color: #ffffff;
 }
-#logo{
-    margin: -20px auto;
+
+/* Logo */
+#logo {
+    display: block;
+    margin: 10px auto;
     height: 50px;
 }
-#cookie{
+
+/* Hlavní tlačítko */
+#cookie {
     width: 300px;
     height: 350px;
 }
 
-
-a{
+/* Odkaz zpět */
+a {
     border: solid 1px black;
     text-decoration: none;
     color: black;
@@ -23,27 +31,37 @@ a{
     padding: 20px;
     width: 200px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    text-align: center;
 }
 
+/* Flex rozložení stránky */
 .container {
     display: flex;
-    width: 100vw; /* využije celou šířku okna */
-    height: auto;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100vw;
+    height: calc(100vh - 150px); /* minus header + footer výška */
     padding: 20px;
-    gap: 20px;
 }
 
+/* Panely vlevo/vpravo */
 .levy-panel,
 .pravy-panel {
-    width: 20vw; /* 20 % šířky obrazovky */
+    width: 20vw;
+    height: 20vw; /* stejné jako šířka = čtverec */
     background-color: #f0f0f0;
     padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    overflow: auto;
 }
 
+/* Prostřední obsah */
 .hlavni-obsah {
-    width: 60vw; /* prostřední část */
+    width: 55vw;
+    text-align: center;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
 }

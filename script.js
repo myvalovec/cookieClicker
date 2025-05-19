@@ -53,8 +53,8 @@ function createSquare(number) {
     const t2 = document.createElement('div');
     t1.style.fontSize = "30px";
     t2.style.fontSize = "20px";
-    t1.innerHTML = text1;
-    t2.innerHTML = text2;
+    t1.innerHTML = names[number];
+    t2.innerHTML = prices[number];
 
     textPart.appendChild(t1);
     textPart.appendChild(t2);
@@ -66,7 +66,7 @@ function createSquare(number) {
     imagePart.style.justifyContent = 'center';
 
     const img = document.createElement('img');
-    img.src = imageUrl;
+    img.src = images[number];
     img.style.width = '50px';
     img.style.height = '50px';
     imagePart.appendChild(img);
@@ -74,9 +74,9 @@ function createSquare(number) {
     square.appendChild(imagePart);
     square.appendChild(textPart);
 
-    square.onclick = clicked(number);
+    //square.onclick = clicked(number);
     container.appendChild(square);
-    updates.push(square)
+    //updates.push(square)
     
 }
 

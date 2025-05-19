@@ -13,7 +13,7 @@ function spink() {
     document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
-function createSquare(text1, text2, text3, imageUrl) {
+function createSquare(text1, text2, text3, imageUrl, onClickFunction) {
     const container = document.getElementById('lp');
 
     const square = document.createElement('div');
@@ -58,7 +58,7 @@ function createSquare(text1, text2, text3, imageUrl) {
     square.appendChild(textPart);
     
 
-    square.onclick = () => alert('Kliknuto!');
+    square.onclick = onClickFunction;
 
     container.appendChild(square);
 }

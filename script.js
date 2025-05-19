@@ -25,7 +25,7 @@ function updateLeft() {
 }
 
 function clicked(number) {
-  upgrades[number].remove();
+    upgrades[number].remove();
 }
 
 function createSquare(number) {

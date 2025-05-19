@@ -32,6 +32,7 @@ function createSquare(text1, text2, text3, imageUrl) {
 
     const t1 = document.createElement('div');
     const t2 = document.createElement('div');
+    t2.style.fontSize = "10px";
     const t3 = document.createElement('div');
     t1.textContent = text1;
     t2.textContent = text2;

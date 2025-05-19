@@ -17,6 +17,7 @@ square.style.cursor = 'pointer';
 // Texty
 const texts = document.createElement('div');
 texts.style.textAlign = 'left';
+
 texts.innerHTML = `
   <div>Text 1</div>
   <div>Text 2</div>
@@ -26,7 +27,7 @@ texts.innerHTML = `
 // Obrázek
 const img = document.createElement('img');
 img.src = './obrazky/vojtik.jpg';
-img.style.width = '50px';
+img.style.width = '20px';
 img.style.height = '50px';
 
 // Přidání do čtverce

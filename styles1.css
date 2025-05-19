@@ -28,7 +28,7 @@ a{
 
 .container {
     display: flex;
-    width: 99vw; /* využije celou šířku okna */
+    width: 99vw;
     height: auto;
     justify-content: space-between;
     align-items: flex-start;
@@ -38,11 +38,11 @@ a{
 
 .levy-panel,
 .pravy-panel {
-    width: 200px; /* 20 % šířky obrazovky */
+    width: 220px;
+    height: 50vh;
     background-color: #ffffff;
     padding: 0px;
-    height:fit-content;
-    
+    overflow-y: scroll;
 }
 
 

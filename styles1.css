@@ -38,8 +38,8 @@ a{
 
 .levy-panel,
 .pravy-panel {
-    width: 220px;
-    height: 50vh;
+    width: 20vw;
+    height: 60vh;
     background-color: #ffffff;
     padding: 0px;
     overflow-y: scroll;

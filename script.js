@@ -17,7 +17,7 @@ function createSquare(text1, text2, text3, imageUrl, onClickFunction) {
     const container = document.getElementById('lp');
 
     const square = document.createElement('div');
-    square.style.width = '200px';
+    square.style.width = '15vw';
     square.style.height = '80px';
     square.style.border = '1px solid black';
     square.style.display = 'flex';

@@ -72,7 +72,7 @@ function createSquare(number) {
     square.appendChild(textPart);
 
     square.onclick = clicked(number);
-
+    updates.push(square)
     container.appendChild(square);
 }
 

@@ -9,9 +9,7 @@
     <title>Cookie Clicker - Hra</title>
 
     <link rel="icon" type="image/jpeg" href="a.jpg">
-
     <link rel="stylesheet" href="styles1.css">
-
     <script src="script.js"></script>
 </head>
 <body>
@@ -19,18 +17,29 @@
         <!--<img src="./obrazky/cookie-logo.jpg" alt="Logo Cookie Clicker" id="logo">-->
         <img src="./obrazky/karl.jpg" alt="Karl" id="logo">
         <h1>Hraj Ministr Clicker!</h1>
-        
     </header>
-    <main>
-        
-        <p>Klikni na ministra a sbírej body!</p>
-        <img src="./obrazky/spink.jpg" alt="Ministr" id="cookie" onclick="klikniNaCookie()" onmouseover="naPana()" onmouseout="spink()">
-        <p>Počet bodů: <span id="body">0</span></p>
-    </main>
-        
+
+    <!-- Flexbox kontejner -->
+    <div class="container">
+        <div class="levy-panel">
+            <p>Levý panel</p>
+            <!-- Např. statistiky, menu -->
+        </div>
+
+        <main class="hlavni-obsah">
+            <p>Klikni na ministra a sbírej body!</p>
+            <img src="./obrazky/spink.jpg" alt="Ministr" id="cookie" onclick="klikniNaCookie()" onmouseover="naPana()" onmouseout="spink()">
+            <p>Počet bodů: <span id="body">0</span></p>
+        </main>
+
+        <div class="pravy-panel">
+            <p>Pravý panel</p>
+            <!-- Např. bonusy, vylepšení -->
+        </div>
+    </div>
+
     <footer>
         <a href="Index.html">Zpět</a>
     </footer>
-    
 </body>
 </html>

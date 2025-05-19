@@ -25,3 +25,25 @@ a{
     display: block;
     margin: 0 auto;
 }
+
+.container {
+    display: flex;
+    width: 100vw; /* využije celou šířku okna */
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.levy-panel,
+.pravy-panel {
+    width: 20vw; /* 20 % šířky obrazovky */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hlavni-obsah {
+    width: 60vw; /* prostřední část */
+}

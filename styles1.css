@@ -41,7 +41,7 @@ a{
     width: 100px; /* 20 % šířky obrazovky */
     background-color: #ce1b1b;
     padding: 0px;
-    height: 99vw;
+    height:fit-content;
     
 }
 

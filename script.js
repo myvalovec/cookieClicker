@@ -16,7 +16,7 @@ square.style.cursor = 'pointer';
 
 // Texty
 const texts = document.createElement('div');
-texts.style.textAlign = 'right';
+texts.style.textAlign = 'left';
 texts.innerHTML = `
   <div>Text 1</div>
   <div>Text 2</div>
@@ -25,13 +25,14 @@ texts.innerHTML = `
 
 // Obrázek
 const img = document.createElement('img');
-img.src = 'https://via.placeholder.com/50';
+img.src = './obrazky/vojtik.jpg';
 img.style.width = '50px';
 img.style.height = '50px';
 
 // Přidání do čtverce
-square.appendChild(texts);
 square.appendChild(img);
+square.appendChild(texts);
+
 
 // Kliknutí
 square.onclick = () => alert('Kliknuto!');

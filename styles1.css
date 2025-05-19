@@ -6,7 +6,8 @@ body{
     text-align: center;
 }
 #logo{
-    margin: -30px auto;
+    margin: -20px auto;
+    height: 50px;
 }
 #cookie{
     width: 300px;

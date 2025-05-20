@@ -96,14 +96,16 @@ function otroci() {
 
 function clicked(square, number) {
   if(prices[number] <= body) {
-    square.remove();
+    //square.remove();
+    document.getElementById('lp').innerHTML = "";
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
   
     if(progress[number] < 10) {
       prices[number] *= 2;
-      createSquare(number);
+      update();
+      //createSquare(number);
     }
   }
 }

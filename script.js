@@ -73,17 +73,19 @@ function createSquare(number) {
 }
 
 function init() {
+  setInterval(otroci, 1000);
   for(i = 0; i < names.length; i++) {
     createSquare(i);
     console.log(i);
   }
-  setInterval(otroci, 1000);
+  
 }
 
 function otroci() {
+  body+=1;
   for(i = 0; i < progress.length; i++) {
     for(j = 0; j < progress[i]; j++) {
-      body+=1;
+      
     }
   }
 }

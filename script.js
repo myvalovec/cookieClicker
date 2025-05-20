@@ -66,9 +66,10 @@ function createSquare(number) {
     square.appendChild(textPart);
 
     
+    
+    
     container.appendChild(square);
     square.onclick = clicked(square, number);
-    
 }
 
 function init() {

@@ -1,8 +1,8 @@
-const names = ["Vojtik"];
-const images = ["./obrazky/vojtik.jpg"];
-const prices = [10]
-const progress = [0]
-const maxProgress = [10]
+const names = ["Vojtik", "Karl"];
+const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
+const prices = [10, 50]
+const progress = [0, 0]
+const maxProgress = [10, 10]
 const upgrades = []
 
 
@@ -20,16 +20,7 @@ function spink() {
   document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
-function init() {
-  for(i = 0; i <= names.length; i++) {
-    createSquare(i);
-    console.log(i)
-  }
-}
 
-function clicked(number) {
-  //upgrades[number].remove();
-}
 
 function createSquare(number) {
     const container = document.getElementById('lp');
@@ -74,10 +65,20 @@ function createSquare(number) {
     square.appendChild(imagePart);
     square.appendChild(textPart);
 
-    //square.onclick = clicked(number);
+    square.onclick = clicked(square, number);
     container.appendChild(square);
-    //updates.push(square)
     
 }
 
+function init() {
+  for(i = 0; i < names.length; i++) {
+    createSquare(i);
+    console.log(i);
+  }
+}
+
+function clicked(square, number) {
+  square.remove();
+  //upgrades[number].remove();
+}
 init();

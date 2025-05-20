@@ -2,8 +2,8 @@ const names = ["Vojtik", "Karl", "𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/marecek.jpg"];
 const prices = [10, 50, 150]
 const additives = [1, 2, 3]
-progress = [0, 0]
-incomes = [0, 0]
+progress = [0, 0, 0]
+incomes = [0, 0, 0]
 
 
 

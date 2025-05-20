@@ -1,12 +1,12 @@
-const Pnames = ["Vojtik", "Karl"];
-const Pimages = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
-const Pprices = [10, 50]
-Pprogress = [0, 0]
-Pincomes = [0.5, 2]
+const names = ["Vojtik", "Karl"];
+const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
+const prices = [10, 50]
+progress = [0, 0]
+income = [0, 0]
 
 
 
-let body = 0.0;
+let body = 0;
 function klikniNaCookie() {
   body++;
   document.getElementById("body").innerText = body;
@@ -44,8 +44,8 @@ function createSquare(number) {
     const t2 = document.createElement('div');
     t1.style.fontSize = "30px";
     t2.style.fontSize = "20px";
-    t1.innerHTML = Pnames[number];
-    t2.innerHTML = Pprices[number]+"$";
+    t1.innerHTML = names[number];
+    t2.innerHTML = prices[number]+"$";
 
     textPart.appendChild(t1);
     textPart.appendChild(t2);
@@ -57,7 +57,7 @@ function createSquare(number) {
     imagePart.style.justifyContent = 'center';
 
     const img = document.createElement('img');
-    img.src = Pimages[number];
+    img.src = images[number];
     img.style.width = '50px';
     img.style.height = '50px';
     imagePart.appendChild(img);
@@ -67,13 +67,13 @@ function createSquare(number) {
 
     container.appendChild(square);
     square.onclick = function () {
-        clicked(number);
+        clicked(square, number);
     };
     
 
 }
 function update() {
-  for(i = 0; i < Pnames.length; i++) {
+  for(i = 0; i < names.length; i++) {
     createSquare(i);
     console.log(i);
   }
@@ -87,22 +87,27 @@ function init() {
 }
 
 function otroci() {
-  for(i = 0; i < Pincomes.length; i++) {
-    body += Pincomes
+  for(i = 0; i < progress.length; i++) {
+    for(j = 0; j < progress[i]; j++) {
+      body+=1;
+    }
   }
   document.getElementById("body").innerText = body;
 }
 
-function clicked(number) {
-  if(Pprices[number] <= body && Pprogress[number] < 10) {
+function clicked(square, number) {
+  if(prices[number] <= body && progress[number] < 10) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
-    body -= Pprices[number]
+    body -= prices[number]
     document.getElementById("body").innerText = body;
-    Pprogress[number] += 1;
-    Pprices[number] *= 2;
-    update();
+    progress[number] += 1;
+  
+    if() {
+      prices[number] *= 2;
+      update();
+      //createSquare(number);
+    }
   }
 }
-
 init();

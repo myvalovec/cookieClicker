@@ -25,10 +25,10 @@ function addImage(number) {
   const container = document.getElementById('rp');
 
   const image = document.createElement('div');
-  imagePart.style.flex = '1';
-  imagePart.style.display = 'flex';
-  imagePart.style.alignItems = 'center';
-  imagePart.style.justifyContent = 'center';
+  image.style.flex = '1';
+  image.style.display = 'flex';
+  image.style.alignItems = 'center';
+  image.style.justifyContent = 'center';
 
   container.append(image);
 }

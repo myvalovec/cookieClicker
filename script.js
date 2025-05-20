@@ -84,7 +84,7 @@ function clicked(square, number) {
     square.remove();
     body -= prices[number]
     document.getElementById("body").innerText = body;
+    progress[number] += 1;
   }
-  //upgrades[number].remove();
 }
 init();

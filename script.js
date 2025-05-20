@@ -6,7 +6,7 @@ const additives = [1, 2, 3, 5, 8, 10]
 progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-let body = 10000; //zakladni kapital
+let body = 0; //zakladni kapital
 
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {

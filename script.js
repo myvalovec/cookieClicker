@@ -82,12 +82,13 @@ function init() {
 }
 
 function otroci() {
-  body+=1;
+  
   for(i = 0; i < progress.length; i++) {
     for(j = 0; j < progress[i]; j++) {
-      
+      body+=1;
     }
   }
+  document.getElementById("body").innerText = body;
 }
 
 function clicked(square, number) {
@@ -96,6 +97,11 @@ function clicked(square, number) {
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
+    createSquare(number)
+    if(progress[number] <= maxProgress[number]) {
+      price[number] *= 2;
+      
+    }
   }
 }
 init();

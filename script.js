@@ -95,14 +95,14 @@ function otroci() {
   document.getElementById("body").innerText = body;
 }
 
-function clicked(square, number) {
+function clicked(number) {
   if(prices[number] <= body && progress[number] < 10) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
-    prices[number] *= 1.15;
+    prices[number] *= 1.20;
     update();
   }
 }

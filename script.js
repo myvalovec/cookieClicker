@@ -1,3 +1,4 @@
+//pasivni prijem, pole
 const names = ["Vojtik", "Karl", "Tade","kubicek","𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/tade.jpg", "./obrazky/kubicek.jpg", "./obrazky/marecek.jpg"];
 const prices = [10, 50, 150, 400, 1000]
@@ -5,22 +6,25 @@ const additives = [1, 2, 3, 5, 8]
 progress = [0, 0, 0, 0]
 incomes = [0, 0, 0, 0]
 
-
-
 let body = 0;
+
+//pridani bodu po kliknuti na ministra
 function klikniNaCookie() {
   body++;
   document.getElementById("body").innerText = body;
 }
 
+//ministr po najeti mysi
 function naPana() {
   document.getElementById("cookie").src = "./obrazky/ministr.jpg"
 }
 
+//ministr kdyz je mys mimo
 function spink() {
   document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
+//pridani obrazku vylepseni do praveho panelu
 function addImage(number) {
   const container = document.getElementById('rp');
 
@@ -32,6 +36,7 @@ function addImage(number) {
   container.append(img);
 }
 
+//vytvoreni ctverecku pro upgrade na pasivni prijem
 function createSquare(number) {
     const container = document.getElementById('lp');
 
@@ -82,6 +87,7 @@ function createSquare(number) {
     
 
 }
+//update leveho panelu
 function update() {
   for(i = 0; i < names.length; i++) {
     createSquare(i);
@@ -90,12 +96,13 @@ function update() {
   
 }
 
+//inicializace
 function init() {
-  setInterval(otroci, 1000);
+  setInterval(otroci, 1000); //kazdou vterinu pridani penez z pasivniho prijmu
   update()
-  
 }
 
+//pridavani penez za pasivni prijem
 function otroci() {
   for(i = 0; i < incomes.length; i++) {
     body += incomes[i];
@@ -103,6 +110,7 @@ function otroci() {
   document.getElementById("body").innerText = body;
 }
 
+//kliknuti na upgrade v levem panelu
 function clicked(number) {
   if(prices[number] <= body) {
     //square.remove();
@@ -116,4 +124,5 @@ function clicked(number) {
     update();
   }
 }
+
 init();

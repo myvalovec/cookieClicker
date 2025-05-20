@@ -80,7 +80,11 @@ function init() {
 }
 
 function clicked(square, number) {
-  square.remove();
+  if(prices[number] <= body) {
+    square.remove();
+    body -= prices[number]
+    document.getElementById("body").innerText = body;
+  }
   //upgrades[number].remove();
 }
 init();

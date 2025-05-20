@@ -83,7 +83,7 @@ function init() {
 function otroci() {
   for(i = 0; i < progress.length; i++) {
     for(j = 0; j < progress[i]; j++) {
-      
+      body+=1;
     }
   }
 }

@@ -84,13 +84,9 @@ function init() {
 function otroci() {
   
   for(i = 0; i < progress.length; i++) {
-    bodyToAdd = 0;
+    
     for(j = 0; j < progress[i]; j++) {
-      bodyToAdd += 1;
-      bodyToAdd *= 2;
-    }
-    if(bodyToAdd != 0) {
-    body = bodyToAdd;
+      body+=1;
     }
   }
   document.getElementById("body").innerText = body;

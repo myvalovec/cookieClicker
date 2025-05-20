@@ -6,7 +6,7 @@ Pincomes = [0.5, 2]
 
 
 
-let body = 0;
+let body = 0.0;
 function klikniNaCookie() {
   body++;
   document.getElementById("body").innerText = body;
@@ -73,7 +73,7 @@ function createSquare(number) {
 
 }
 function update() {
-  for(i = 0; i < names.length; i++) {
+  for(i = 0; i < Pnames.length; i++) {
     createSquare(i);
     console.log(i);
   }

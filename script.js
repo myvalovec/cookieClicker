@@ -1,9 +1,9 @@
-const names = ["Vojtik", "Karl", "𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
-const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/marecek.jpg"];
-const prices = [10, 50, 150]
-const additives = [1, 2, 3]
-progress = [0, 0, 0]
-incomes = [0, 0, 0]
+const names = ["Vojtik", "Karl", "Tade","𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
+const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/tade.jpg", "./obrazky/marecek.jpg"];
+const prices = [10, 50, 150, 400]
+const additives = [1, 2, 3, 5]
+progress = [0, 0, 0, 0]
+incomes = [0, 0, 0, 0]
 
 
 
@@ -68,8 +68,8 @@ function createSquare(number) {
 
     const img = document.createElement('img');
     img.src = images[number];
-    img.style.width = '50px';
-    img.style.height = '50px';
+    img.style.width = '70px';
+    img.style.height = '70px';
     imagePart.appendChild(img);
 
     square.appendChild(imagePart);

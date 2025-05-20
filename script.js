@@ -1,7 +1,8 @@
-const names = ["Vojtik", "Karl"];
-const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
-const prices = [10, 50]
-progress = [0, 0]
+const Pnames = ["Vojtik", "Karl"];
+const Pimages = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
+const Pprices = [10, 50]
+Pprogress = [0, 0]
+Pincomes = [0.5, 2]
 
 
 

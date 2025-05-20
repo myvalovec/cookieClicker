@@ -2,7 +2,7 @@ const names = ["Vojtik", "Karl"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
 const prices = [10, 50]
 progress = [0, 0]
-const maxProgress = [10, 10]
+
 
 
 let body = 0;
@@ -86,7 +86,6 @@ function init() {
 }
 
 function otroci() {
-  
   for(i = 0; i < progress.length; i++) {
     for(j = 0; j < progress[i]; j++) {
       body+=1;
@@ -102,7 +101,7 @@ function clicked(square, number) {
     document.getElementById("body").innerText = body;
     progress[number] += 1;
   
-    if(progress[number] <= maxProgress[number]) {
+    if(progress[number] < 10) {
       prices[number] *= 2;
       createSquare(number);
     }

@@ -46,6 +46,7 @@ function createSquare(number) {
     square.style.border = '1px solid black';
     square.style.display = 'flex';
     square.style.cursor = 'pointer';
+    square.style.borderRadius = "10px";
 
     const textPart = document.createElement('div');
     textPart.style.flex = '2';

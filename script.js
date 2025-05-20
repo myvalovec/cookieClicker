@@ -103,6 +103,7 @@ function clicked(number) {
     progress[number] += 1;
     prices[number] = Math.floor(prices[number] * 1.50);
     incomes[number] += additives[number];
+    document.getElementById("rp")
     update();
   }
 }

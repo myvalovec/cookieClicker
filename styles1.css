@@ -41,7 +41,7 @@ a{
 .pravy-panel {
     width: 20vw;
     height: 60vh;
-    
+    border-radius: 10px;
     padding: 0px;
     overflow-y: scroll;
 }

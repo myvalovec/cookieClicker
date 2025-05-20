@@ -21,7 +21,17 @@ function spink() {
   document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
 
+function addImage(number) {
+  const container = document.getElementById('rp');
 
+  const image = document.createElement('div');
+  imagePart.style.flex = '1';
+  imagePart.style.display = 'flex';
+  imagePart.style.alignItems = 'center';
+  imagePart.style.justifyContent = 'center';
+
+  container.append(image);
+}
 
 function createSquare(number) {
     const container = document.getElementById('lp');
@@ -103,7 +113,7 @@ function clicked(number) {
     progress[number] += 1;
     prices[number] = Math.floor(prices[number] * 1.50);
     incomes[number] += additives[number];
-    document.getElementById("rp")
+    addImage(number);
     update();
   }
 }

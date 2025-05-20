@@ -1,5 +1,5 @@
 const names = ["Vojtik", "Karl", "𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
-const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
+const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/marecek.jpg"];
 const prices = [10, 50, 150]
 const additives = [1, 2, 3]
 progress = [0, 0]
@@ -52,8 +52,8 @@ function createSquare(number) {
 
     const t1 = document.createElement('div');
     const t2 = document.createElement('div');
-    t1.style.fontSize = "30px";
-    t2.style.fontSize = "20px";
+    t1.style.fontSize = "20px";
+    t2.style.fontSize = "15px";
     t1.innerHTML = names[number];
     t2.innerHTML = prices[number]+"$";
 

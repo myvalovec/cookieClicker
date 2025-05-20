@@ -97,10 +97,10 @@ function clicked(square, number) {
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
-    createSquare(number)
+  
     if(progress[number] <= maxProgress[number]) {
-      price[number] *= 2;
-      
+      prices[number] *= 2;
+      createSquare(number);
     }
   }
 }

@@ -67,7 +67,7 @@ function createSquare(number) {
 
     
     container.appendChild(square);
-    square.onclick = clicked(imagePart, number);
+    square.onclick = clicked(square, number);
     
 }
 

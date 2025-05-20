@@ -3,7 +3,6 @@ const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
 const prices = [10, 50]
 const progress = [0, 0]
 const maxProgress = [10, 10]
-const upgrades = []
 
 
 let body = 0;
@@ -65,9 +64,6 @@ function createSquare(number) {
     square.appendChild(imagePart);
     square.appendChild(textPart);
 
-    
-    
-    
     container.appendChild(square);
     square.onclick = function () {
         clicked(square, number);

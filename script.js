@@ -38,7 +38,7 @@ function addImage(number) {
 
 //vytvoreni ctverecku pro upgrade na pasivni prijem
 function createSquare(number) {
-    const container = document.getElementById('lp');
+  const container = document.getElementById('lp');
 
     const square = document.createElement('div');
     square.style.width = '18vw';

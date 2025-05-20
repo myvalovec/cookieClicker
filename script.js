@@ -101,7 +101,7 @@ function clicked(number) {
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
-    prices[number] = Math.floor(prices[number] * 1.20);
+    prices[number] = Math.floor(prices[number] * 1.50);
     incomes[number] += additives[number];
     update();
   }

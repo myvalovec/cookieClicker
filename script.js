@@ -1,7 +1,7 @@
 const names = ["Vojtik", "Karl"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
 const prices = [10, 50]
-const progress = [0, 0]
+progress = [0, 0]
 const maxProgress = [10, 10]
 
 
@@ -71,9 +71,7 @@ function createSquare(number) {
     
 
 }
-
-function init() {
-  setInterval(otroci, 1000);
+function update() {
   for(i = 0; i < names.length; i++) {
     createSquare(i);
     console.log(i);
@@ -81,10 +79,15 @@ function init() {
   
 }
 
+function init() {
+  setInterval(otroci, 1000);
+  update()
+  
+}
+
 function otroci() {
   
   for(i = 0; i < progress.length; i++) {
-    
     for(j = 0; j < progress[i]; j++) {
       body+=1;
     }

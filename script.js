@@ -1,8 +1,9 @@
 const names = ["Vojtik", "Karl"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
 const prices = [10, 50]
+const additives = [1, 2]
 progress = [0, 0]
-income = [0, 0]
+incomes = [0, 0]
 
 
 
@@ -87,10 +88,8 @@ function init() {
 }
 
 function otroci() {
-  for(i = 0; i < progress.length; i++) {
-    for(j = 0; j < progress[i]; j++) {
-      body+=1;
-    }
+  for(i = 0; i < incomes.length; i++) {
+    body += incomes[i];
   }
   document.getElementById("body").innerText = body;
 }
@@ -102,7 +101,8 @@ function clicked(number) {
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
-    prices[number] *= 1.20;
+    prices[number] = Math.floor(prices[number] * 1.20);
+    incomes[number] += additives[number];
     update();
   }
 }

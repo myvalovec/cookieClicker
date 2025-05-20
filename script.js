@@ -102,12 +102,8 @@ function clicked(square, number) {
     body -= prices[number]
     document.getElementById("body").innerText = body;
     progress[number] += 1;
-  
-    if() {
-      prices[number] *= 2;
-      update();
-      //createSquare(number);
-    }
+    prices[number] *= 1.15;
+    update();
   }
 }
 init();

@@ -44,7 +44,7 @@ function createSquare(number) {
     t1.style.fontSize = "30px";
     t2.style.fontSize = "20px";
     t1.innerHTML = names[number];
-    t2.innerHTML = prices[number];
+    t2.innerHTML = prices[number]+"$";
 
     textPart.appendChild(t1);
     textPart.appendChild(t2);

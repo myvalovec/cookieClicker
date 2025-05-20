@@ -44,8 +44,8 @@ function createSquare(number) {
     const t2 = document.createElement('div');
     t1.style.fontSize = "30px";
     t2.style.fontSize = "20px";
-    t1.innerHTML = names[number];
-    t2.innerHTML = prices[number]+"$";
+    t1.innerHTML = Pnames[number];
+    t2.innerHTML = Pprices[number]+"$";
 
     textPart.appendChild(t1);
     textPart.appendChild(t2);
@@ -57,7 +57,7 @@ function createSquare(number) {
     imagePart.style.justifyContent = 'center';
 
     const img = document.createElement('img');
-    img.src = images[number];
+    img.src = Pimages[number];
     img.style.width = '50px';
     img.style.height = '50px';
     imagePart.appendChild(img);
@@ -67,7 +67,7 @@ function createSquare(number) {
 
     container.appendChild(square);
     square.onclick = function () {
-        clicked(square, number);
+        clicked(number);
     };
     
 
@@ -87,27 +87,22 @@ function init() {
 }
 
 function otroci() {
-  for(i = 0; i < progress.length; i++) {
-    for(j = 0; j < progress[i]; j++) {
-      body+=1;
-    }
+  for(i = 0; i < Pincomes.length; i++) {
+    body += Pincomes
   }
   document.getElementById("body").innerText = body;
 }
 
-function clicked(square, number) {
-  if(prices[number] <= body) {
+function clicked(number) {
+  if(Pprices[number] <= body && Pprogress[number] < 10) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
-    body -= prices[number]
+    body -= Pprices[number]
     document.getElementById("body").innerText = body;
-    progress[number] += 1;
-  
-    if(progress[number] < 10) {
-      prices[number] *= 2;
-      update();
-      //createSquare(number);
-    }
+    Pprogress[number] += 1;
+    Pprices[number] *= 2;
+    update();
   }
 }
+
 init();

@@ -3,10 +3,10 @@ const names = ["Vojtik", "Karl", "Tade","kubicek","𝓯𝓻𝓮𝓪𝓴𝔂 Már
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/tade.jpg", "./obrazky/kubicek.jpg", "./obrazky/marecek.jpg"];
 const prices = [10, 50, 150, 400, 1000]
 const additives = [1, 2, 3, 5, 8]
-progress = [0, 0, 0, 0]
-incomes = [0, 0, 0, 0]
+progress = [0, 0, 0, 0, 0]
+incomes = [0, 0, 0, 0, 0]
 
-let body = 0;
+let body = 10000; //zakladni kapital
 
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {

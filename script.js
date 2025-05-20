@@ -1,7 +1,7 @@
-const names = ["Vojtik", "Karl"];
+const names = ["Vojtik", "Karl", "𝓯𝓻𝓮𝓪𝓴𝔂 Mára"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg"];
-const prices = [10, 50]
-const additives = [1, 2]
+const prices = [10, 50, 150]
+const additives = [1, 2, 3]
 progress = [0, 0]
 incomes = [0, 0]
 

@@ -24,13 +24,12 @@ function spink() {
 function addImage(number) {
   const container = document.getElementById('rp');
 
-  const image = document.createElement('div');
-  image.style.flex = '1';
-  image.style.display = 'flex';
-  image.style.alignItems = 'center';
-  image.style.justifyContent = 'center';
+  const img = document.createElement('img');
+  img.src = images[number];
+  img.style.width = '50px';
+  img.style.height = '50px';
 
-  container.append(image);
+  container.append(img);
 }
 
 function createSquare(number) {

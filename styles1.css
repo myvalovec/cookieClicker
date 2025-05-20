@@ -1,6 +1,7 @@
 *{
     font-family: sans-serif;
     box-sizing: border-box;
+    background-color:rgb(235, 235, 235);
 }
 body{
     text-align: center;
@@ -40,7 +41,7 @@ a{
 .pravy-panel {
     width: 20vw;
     height: 60vh;
-    background-color: #ffffff;
+    
     padding: 0px;
     overflow-y: scroll;
 }

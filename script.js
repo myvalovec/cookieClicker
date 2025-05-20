@@ -104,7 +104,7 @@ function otroci() {
 }
 
 function clicked(number) {
-  if(prices[number] <= body && progress[number] < 10) {
+  if(prices[number] <= body) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
     body -= prices[number]

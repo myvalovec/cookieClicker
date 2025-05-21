@@ -103,7 +103,7 @@ function update() {
   clicks.style.justifyContent = 'center';
   clicks.style.alignItems = 'center';
   clicks.style.fontSize = "20px";
-  clicks.innerHTML = "klikání"
+  clicks.innerHTML = "klikání (+" + clickIncomes + "/klik)";
   clicks.style.width = '18vw';
   clicks.style.height = '30px';
   clicks.style.display = 'flex';

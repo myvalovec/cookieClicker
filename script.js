@@ -162,7 +162,7 @@ function clicked(number, type) {
     document.getElementById('lp').innerHTML = "";
     body -= clickPrices[number];
     document.getElementById("body").innerText = body;
-    ClickProgress[number] += 1;
+    clickProgress[number] += 1;
     clickPrices[number] = Math.floor(clickPrices[number] * 2.00);
     clickIncomes[number] += clickAdditives[number];
     update();

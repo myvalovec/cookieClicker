@@ -1,12 +1,17 @@
 //pasivni prijem, pole
-const names = ["Vojtik", "Karl", "Tade","kubicek","𝓯𝓻𝓮𝓪𝓴𝔂 Mára", "(っ◔◡◔)っ matejicek"];
+const names = ["Vojtik", "Karl", "Tade","Kubicek","𝓯𝓻𝓮𝓪𝓴𝔂 Mára", "(っ◔◡◔)っ matejicek"];
 const images = ["./obrazky/vojtik.jpg", "./obrazky/karl.jpg", "./obrazky/tade.jpg", "./obrazky/kubicek.jpg", "./obrazky/marecek.jpg", "./obrazky/matejicek.jpg"];
 const prices = [10, 50, 150, 400, 1000, 2500]
 const additives = [1, 2, 3, 5, 8, 10]
 let progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-let clickNames = []
+let clickNames = ["Klik"]
+let clickImages = ["./obrazky/vojtik.jpg"]
+let clickPrices = []
+let clickAdditives = [2]
+let clickProgress = [0]
+let clickIncomes = [0]
 
 let body = 0; //zakladni kapital
 
@@ -38,8 +43,8 @@ function addImage(number) {
   container.append(img);
 }
 
-//vytvoreni ctverecku pro upgrade na pasivni prijem
-function createSquare(number) {
+//vytvoreni ctverecku pro upgrade
+function createSquare(number, names, prices) {
   const container = document.getElementById('lp');
 
     const square = document.createElement('div');
@@ -85,15 +90,19 @@ function createSquare(number) {
 
     container.appendChild(square);
     square.onclick = function () {
-        clicked(number);
+        clicked(number, names);
     };
     
 
 }
 //update leveho panelu
 function update() {
+  for(i = 0; i < clickNames.length; i++) {
+    createSquare(i, names, prices);
+    console.log(i);
+  }
   for(i = 0; i < names.length; i++) {
-    createSquare(i);
+    createSquare(i, names, prices);
     console.log(i);
   }
   
@@ -114,8 +123,9 @@ function otroci() {
 }
 
 //kliknuti na upgrade v levem panelu
-function clicked(number) {
-  if(prices[number] <= body) {
+function clicked(number, names) {
+  
+  if(this.names == names && prices[number] <= body) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
     body -= prices[number]

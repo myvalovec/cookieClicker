@@ -39,7 +39,7 @@ a{
 
 .levy-panel,
 .pravy-panel {
-    width: 20vw;
+    width: 275px;
     height: 60vh;
     padding: 0px;
     overflow-y: scroll;

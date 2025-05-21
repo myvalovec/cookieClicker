@@ -99,7 +99,7 @@ function createSquare(number, names, prices) {
 function update() {
   const container = document.getElementById("lp");
 
-  const clicks = document.createElement('div');
+  let clicks = document.createElement('div');
   clicks.style.justifyContent = 'center';
   clicks.style.alignItems = 'center';
   clicks.style.fontSize = "20px";
@@ -110,9 +110,19 @@ function update() {
   container.appendChild(clicks);
 
   for(i = 0; i < clickNames.length; i++) {
-    createSquare(i, names, prices);
+    createSquare(i, clickNames, clickPrices);
     console.log(i);
   }
+
+  let passive = document.createElement('div');
+  passive.style.justifyContent = 'center';
+  passive.style.alignItems = 'center';
+  passive.style.fontSize = "20px";
+  passive.innerHTML = "pasivní příjem"
+  passive.style.width = '18vw';
+  passive.style.height = '30px';
+  passive.style.display = 'flex';
+  container.appendChild(passive);
 
   for(i = 0; i < names.length; i++) {
     createSquare(i, names, prices);

@@ -158,6 +158,9 @@ function clicked(number, type) {
     addImage(number);
     update();
   }
+  else if (type == 1 && clickPrices[number] <= body) {
+
+  }
 }
 
 init();

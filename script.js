@@ -11,7 +11,7 @@ let clickImages = ["./obrazky/vojtik.jpg"]
 let clickPrices = [50]
 let clickAdditives = [2]
 let clickProgress = [0]
-let clickIncomes = [0]
+let clickIncomes = [1]
 
 let body = 0; //zakladni kapital
 

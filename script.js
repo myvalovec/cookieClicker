@@ -6,7 +6,7 @@ const additives = [1, 2, 3, 5, 8, 10]
 let progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-let clickNames = ["Klik"]
+let clickNames = ["2x kliknutí"]
 let clickImages = ["./obrazky/vojtik.jpg"]
 let clickPrices = [50]
 let clickAdditives = [2]
@@ -44,7 +44,7 @@ function addImage(number) {
 }
 
 //vytvoreni ctverecku pro upgrade
-function createSquare(number, names, prices) {
+function createSquare(number, names, prices, type) {
   const container = document.getElementById('lp');
 
     const square = document.createElement('div');
@@ -90,7 +90,7 @@ function createSquare(number, names, prices) {
 
     container.appendChild(square);
     square.onclick = function () {
-        clicked(number, names);
+        clicked(number, type);
     };
     
 
@@ -110,7 +110,7 @@ function update() {
   container.appendChild(clicks);
 
   for(i = 0; i < clickNames.length; i++) {
-    createSquare(i, clickNames, clickPrices);
+    createSquare(i, clickNames, clickPrices, 1);
     console.log(i);
   }
 
@@ -125,7 +125,7 @@ function update() {
   container.appendChild(passive);
 
   for(i = 0; i < names.length; i++) {
-    createSquare(i, names, prices);
+    createSquare(i, names, prices, 0);
     console.log(i);
   }
   

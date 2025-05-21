@@ -98,9 +98,16 @@ function createSquare(number, names, prices) {
 //update leveho panelu
 function update() {
   const container = document.getElementById("lp");
-  const clicks = document.createElement('div');
-  clicks.style.innerHTML = "klikání"
+
+  const clicks = document.createElement('p');
+  clicks.style.fontSize = "20px";
+  clicks.innerHTML = "klikání"
+  clicks.style.width = '18vw';
+  clicks.style.height = '80px';
+  clicks.style.border = '1px solid black';
+  clicks.style.display = 'flex';
   container.appendChild(clicks);
+
   for(i = 0; i < clickNames.length; i++) {
     createSquare(i, names, prices);
     console.log(i);

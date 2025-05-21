@@ -146,6 +146,7 @@ function otroci() {
     incomesSum += incomes[i];
   }
   document.getElementById("body").innerText = body;
+  document.getElementById('lp').innerHTML = "";
   update();
 }
 

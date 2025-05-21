@@ -5,6 +5,7 @@ const prices = [10, 50, 150, 400, 1000, 2500]
 const additives = [1, 2, 3, 5, 8, 10]
 let progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+let incomesSum = 0;
 
 let clickNames = ["Kliknutí +2"]
 let clickImages = ["./obrazky/vojtik.jpg"]
@@ -118,7 +119,7 @@ function update() {
   passive.style.justifyContent = 'center';
   passive.style.alignItems = 'center';
   passive.style.fontSize = "20px";
-  passive.innerHTML = "pasivní příjem"
+  passive.innerHTML = "pasivní příjem (+" + incomesSum + "/s)"
   passive.style.width = '18vw';
   passive.style.height = '30px';
   passive.style.display = 'flex';
@@ -139,10 +140,13 @@ function init() {
 
 //pridavani penez za pasivni prijem
 function otroci() {
+  incomesSum = 0;
   for(i = 0; i < incomes.length; i++) {
     body += incomes[i];
+    incomesSum += incomes[i];
   }
   document.getElementById("body").innerText = body;
+  update();
 }
 
 //kliknuti na upgrade v levem panelu

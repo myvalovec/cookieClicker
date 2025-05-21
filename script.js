@@ -99,12 +99,13 @@ function createSquare(number, names, prices) {
 function update() {
   const container = document.getElementById("lp");
 
-  const clicks = document.createElement('p');
+  const clicks = document.createElement('div');
+  clicks.style.justifyContent = 'center';
+  clicks.style.alignItems = 'center';
   clicks.style.fontSize = "20px";
   clicks.innerHTML = "klikání"
   clicks.style.width = '18vw';
-  clicks.style.height = '80px';
-  clicks.style.border = '1px solid black';
+  clicks.style.height = '30px';
   clicks.style.display = 'flex';
   container.appendChild(clicks);
 

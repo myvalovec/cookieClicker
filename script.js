@@ -6,14 +6,14 @@ const additives = [1, 2, 3, 5, 8, 10]
 let progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-let clickNames = ["2x kliknutí"]
+let clickNames = ["Kliknutí +2"]
 let clickImages = ["./obrazky/vojtik.jpg"]
 let clickPrices = [50]
 let clickAdditives = [2]
 let clickProgress = [0]
 let clickIncomes = 1
 
-let body = 400; //zakladni kapital
+let body = 0; //zakladni kapital
 
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {

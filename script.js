@@ -159,7 +159,13 @@ function clicked(number, type) {
     update();
   }
   else if (type == 1 && clickPrices[number] <= body) {
-
+    document.getElementById('lp').innerHTML = "";
+    body -= clickPrices[number];
+    document.getElementById("body").innerText = body;
+    ClickProgress[number] += 1;
+    clickPrices[number] = Math.floor(clickPrices[number] * 2.00);
+    clickIncomes[number] += clickAdditives[number];
+    update();
   }
 }
 

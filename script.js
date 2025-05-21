@@ -97,10 +97,15 @@ function createSquare(number, names, prices) {
 }
 //update leveho panelu
 function update() {
+  const container = document.getElementById("lp");
+  const clicks = document.createElement('div');
+  clicks.style.innerHTML = "klikání"
+  container.appendChild(clicks);
   for(i = 0; i < clickNames.length; i++) {
     createSquare(i, names, prices);
     console.log(i);
   }
+
   for(i = 0; i < names.length; i++) {
     createSquare(i, names, prices);
     console.log(i);
@@ -123,8 +128,7 @@ function otroci() {
 }
 
 //kliknuti na upgrade v levem panelu
-function clicked(number, names) {
-  console.log(this.names === names)
+function clicked(number, type) {
   if( prices[number] <= body) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";

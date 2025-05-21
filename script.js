@@ -13,11 +13,11 @@ let clickAdditives = [2]
 let clickProgress = [0]
 let clickIncomes = 1
 
-let body = 50; //zakladni kapital
+let body = 400; //zakladni kapital
 
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {
-  body++;
+  body += clickIncomes;
   document.getElementById("body").innerText = body;
 }
 

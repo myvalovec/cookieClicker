@@ -147,7 +147,7 @@ function otroci() {
 
 //kliknuti na upgrade v levem panelu
 function clicked(number, type) {
-  if( prices[number] <= body) {
+  if(type == 0 && prices[number] <= body) {
     //square.remove();
     document.getElementById('lp').innerHTML = "";
     body -= prices[number]

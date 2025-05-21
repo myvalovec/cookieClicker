@@ -8,7 +8,7 @@ let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 let clickNames = ["Klik"]
 let clickImages = ["./obrazky/vojtik.jpg"]
-let clickPrices = []
+let clickPrices = [50]
 let clickAdditives = [2]
 let clickProgress = [0]
 let clickIncomes = [0]

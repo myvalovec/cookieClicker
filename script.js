@@ -174,12 +174,12 @@ function clicked(number, type) {
   }
 }
 //slideshadow
-let logo = document.getElementById("logo")
+let postavy = document.getElementById("postavy")
 let interval = setInterval(intervalFunc, 1000)
 let obrazek = 0
 function intervalFunc(){
   if(obrazek < images.length){
-    logo.src = images[obrazek]
+    postavy.src = images[obrazek]
     obrazek++
   }
   else{

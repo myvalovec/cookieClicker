@@ -30,8 +30,7 @@ a{
 
 .container {
     display: flex;
-    width: 99vw;
-    height: auto;
+    width: 100%;
     justify-content: space-between;
 }
 /*postranní panely*/
@@ -39,7 +38,7 @@ a{
 .pravy-panel {
     width: 275px;
     height: 60vh;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 

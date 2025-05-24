@@ -178,7 +178,7 @@ let logo = document.getElementById("logo")
 let interval = setInterval(intervalFunc, 1000)
 let obrazek = 1
 function intervalFunc(){
-  if(obrazek > images.length){
+  if(obrazek < images.length){
     logo.src = images[obrazek]
     obrazek++
   }

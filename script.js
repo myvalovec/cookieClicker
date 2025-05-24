@@ -184,6 +184,7 @@ function intervalFunc(){
   }
   else{
     obrazek = 0
+    postavy.src = "./obrazky/vojtik.jpg"
   }
 }
 init();

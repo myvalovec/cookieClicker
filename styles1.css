@@ -34,7 +34,6 @@ a{
     height: auto;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
     gap: 20px;
 }
 /*postranní panely*/
@@ -42,7 +41,6 @@ a{
 .pravy-panel {
     width: 275px;
     height: 60vh;
-    
     overflow-y: scroll;
 }
 

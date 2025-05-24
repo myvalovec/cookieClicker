@@ -176,11 +176,14 @@ function clicked(number, type) {
 //slideshadow
 let logo = document.getElementById("logo")
 let interval = setInterval(intervalFunc, 1000)
-let obrazek = 1
+let obrazek = 0
 function intervalFunc(){
   if(obrazek < images.length){
     logo.src = images[obrazek]
     obrazek++
+  }
+  else{
+    obrazek = 0
   }
 }
 init();

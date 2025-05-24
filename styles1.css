@@ -15,7 +15,7 @@ body{
     height: 350px;
 }
 
-
+/*odkaz zpět na první stránku*/
 a{
     border: solid 1px black;
     text-decoration: none;
@@ -36,7 +36,7 @@ a{
     padding: 0px;
     gap: 20px;
 }
-
+/*postranní panely*/
 .levy-panel,
 .pravy-panel {
     width: 275px;

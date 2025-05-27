@@ -23,12 +23,12 @@ function clickAnimation() {
   image.style.transform = "scale(0.98)";
 
   const rect = image.getBoundingClientRect();
-  const centerX = rect.left + rect.width / 2;
-  const centerY = rect.top + rect.height / 2;
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
 
   // Vytvoření více částic
-  for (let i = 0; i < 12; i++) {
-    createParticle(centerX, centerY);
+  for (let i = 0; i < 20; i++) {
+    createParticle(mouseX, mouseY);
   }
   
   setTimeout(() => {
@@ -40,12 +40,11 @@ function createParticle(x, y) {
     const particle = document.createElement("div");
     particle.classList.add("particle");
 
-    // Náhodný směr
     const angle = Math.random() * Math.PI * 2 ;
     const distance = Math.random() * 40;
 
-    const xOffset = Math.cos(angle) * distance-12 + "px";
-    const yOffset = Math.sin(angle) * distance-20 + "px";
+    const xOffset = Math.cos(angle) * distance + "px";
+    const yOffset = Math.sin(angle) * distance + "px";
 
     particle.style.left = `${x}px`;
     particle.style.top = `${y}px`;

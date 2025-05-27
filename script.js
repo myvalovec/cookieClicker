@@ -187,5 +187,18 @@ function clicked(number, type) {
     update();
   }
 }
-
+//slideshadow
+let postavy = document.getElementById("postavy")
+let interval = setInterval(intervalFunc, 1000)
+let obrazek = 0
+function intervalFunc(){
+  if(obrazek < images.length){
+    postavy.src = images[obrazek]
+    obrazek++
+  }
+  else{
+    obrazek = 0
+    postavy.src = "./obrazky/vojtik.jpg"
+  }
+}
 init();

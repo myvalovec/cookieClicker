@@ -1,3 +1,4 @@
+/*všechny html elementy*/
 *{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -6,7 +7,7 @@
 body{
     text-align: center;
 }
-#logo{
+#postavy{
     margin: -20px auto;
     height: 100px;
 }
@@ -15,7 +16,7 @@ body{
     height: 350px;
 }
 
-
+/*odkaz zpět na první stránku*/
 a{
     border: solid 1px black;
     text-decoration: none;
@@ -29,19 +30,14 @@ a{
 
 .container {
     display: flex;
-    width: 99vw;
-    height: auto;
+    width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
 }
-
+/*postranní panely*/
 .levy-panel,
 .pravy-panel {
     width: 275px;
     height: 60vh;
-    padding: 0px;
     overflow-y: scroll;
 }
 

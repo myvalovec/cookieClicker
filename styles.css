@@ -33,6 +33,7 @@ h2{
 footer{
     text-align: center;
 }
+/*tlačítko na změnu barvy*/
 button{
     border-radius: 10px;
     padding: 15px;
@@ -41,7 +42,7 @@ button{
     margin: 0 auto;
     margin-bottom: 60px;
 }
-
+/*odkaz na úvodní stránku*/
 a{
     text-decoration: none;
     color: black;

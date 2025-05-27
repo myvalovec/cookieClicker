@@ -18,8 +18,17 @@ let clickIncomes = 1
 
 let body = 0; //zakladni kapital
 
+function clickAnimation() {
+  image = document.getElementById("cookie");
+  image.style.transform = "scale(0.95) translateY(2px)";
+  setTimeout(() => {
+    image.style.transform = "scale(1) translateY(0)";
+  }, 100);
+}
+
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {
+  clickAnimation();
   body += clickIncomes;
   document.getElementById("body").innerText = body;
 }

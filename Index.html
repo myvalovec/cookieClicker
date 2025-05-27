@@ -12,28 +12,22 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script>
-        function zobrazDatum() {
-            const dnes = new Date();
-            document.getElementById("datum").innerText = dnes.toLocaleDateString();
-        }
-
-        function zmenBarvy() {
-            document.body.classList.toggle("tmave");
-        }
-
-        window.onload = zobrazDatum;
-    </script>
-
     
 </head>
 <body>
     <header>
         <h1>Projekt Cookie Clicker</h1>
-        <img src="./obrazky/logo.jpg" alt="Logo Cookie Clicker" id="logo">
+        <img src="./obrazky/logo.jpg" alt="Logo Cookie Clicker" id="logo" style="margin-top: 20px;" >
     </header>
 
-    <p>Vítejte na stránce našeho školního projektu Cookie Clicker. Tento projekt je jednoduchá hra, ve které klikáte na sušenku a sbíráte body.</p>
+    <div style="text-align: center;">
+        <p>
+            Vítejte na stránce našeho školního projektu Cookie Clicker. 
+            Tento projekt je jednoduchá hra, ve které klikáte na sušenku a sbíráte body.
+        </p>
+        <p id="datum" style="font-size: 18px;"></p>
+    </div>
+
     <main>
         <section id="obsah">
             <h2>Co projekt obsahuje</h2>
@@ -54,14 +48,25 @@
             <p>JavaScript - Luděk Hanzík</p>
         </section>
     </main>
-    
-    
 
     
     <footer>
         <button onclick="zmenBarvy()">Změnit barevné schéma</button>
         <a href="Cookie.html">Přejít na hru</a>
     </footer>
+
+    <script>
+        function zobrazDatum() {
+            const dnes = new Date();
+            document.getElementById("datum").innerText = dnes.toLocaleDateString();
+        }
+        function zmenBarvy() {
+        document.body.classList.toggle("blue");
+       
+    }
+
+        window.onload = zobrazDatum;
+    </script>
     
 </body>
 </html>

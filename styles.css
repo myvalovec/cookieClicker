@@ -3,8 +3,6 @@
     box-sizing: border-box;
     font-size: 24px;
 }
-
-
 header{
     width: 100%;
     display: flex;
@@ -12,9 +10,10 @@ header{
 }
 h1{
     font-size: 72px;
+    text-align: center;
 }
 #logo{
-    width: 300px;
+    width: 200px;
 }
 p{
     text-align: center;
@@ -42,6 +41,10 @@ button{
     margin: 0 auto;
     margin-bottom: 60px;
 }
+.blue {
+    background-color: blue;
+    color: white;
+}
 /*odkaz na úvodní stránku*/
 a{
     text-decoration: none;
@@ -50,3 +53,8 @@ a{
     border-radius: 10px;
     border: solid 1px black;
 } 
+body.blue a {
+    color: black;
+    background-color: white;
+    border-color: black;
+}

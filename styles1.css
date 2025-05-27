@@ -41,6 +41,27 @@ a{
     overflow-y: scroll;
 }
 
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  opacity: 1;
+  transform: translate(0, 0);
+  will-change: transform, opacity;
+  animation: explode 600ms ease-out forwards;
+}
+
+@keyframes explode {
+  to {
+    transform: translate(var(--x), var(--y)) scale(0.2);
+    opacity: 0;
+  }
+}
+
+
 
 
 

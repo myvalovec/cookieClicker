@@ -26,7 +26,7 @@ function clickAnimation() {
   const centerY = rect.top + rect.height / 2;
 
   // Vytvoření více částic
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 50; i++) {
     createParticle(centerX, centerY);
   }
   setTimeout(() => {

@@ -12,7 +12,7 @@ let boughtImages = [];
 let clickNames = ["Kliknutí +2"]
 let clickImages = ["./obrazky/vojtik.jpg"]
 let clickPrices = [50]
-let clickAdditives = [2]
+let clickAdditives = [1]
 let clickProgress = [0]
 let clickIncomes = 1
 

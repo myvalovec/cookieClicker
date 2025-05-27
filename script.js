@@ -9,7 +9,7 @@ let incomesSum = 0;
 let boughtImages = [];
 
 
-let clickNames = ["Kliknutí +2"]
+let clickNames = ["Kliknutí +1"]
 let clickImages = ["./obrazky/vojtik.jpg"]
 let clickPrices = [50]
 let clickAdditives = [1]

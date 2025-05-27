@@ -21,10 +21,42 @@ let body = 0; //zakladni kapital
 function clickAnimation() {
   image = document.getElementById("cookie");
   image.style.transform = "scale(0.98)";
+  const rect = image.getBoundingClientRect();
+  const centerX = rect.left + rect.width / 2;
+  const centerY = rect.top + rect.height / 2;
+
+  // Vytvoření více částic
+  for (let i = 0; i < 12; i++) {
+    createParticle(centerX, centerY);
+  }
   setTimeout(() => {
     image.style.transform = "scale(1)";
   }, 50);
 }
+
+function createParticle(x, y) {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+
+    // Náhodný směr
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = Math.random() * 80 + 20;
+
+    const xOffset = Math.cos(angle) * distance + "px";
+    const yOffset = Math.sin(angle) * distance + "px";
+
+    particle.style.left = `${x}px`;
+    particle.style.top = `${y}px`;
+    particle.style.setProperty("--x", xOffset);
+    particle.style.setProperty("--y", yOffset);
+
+    document.body.appendChild(particle);
+
+    // Odstranit po animaci
+    setTimeout(() => {
+      particle.remove();
+    }, 600);
+  }
 
 //pridani bodu po kliknuti na ministra
 function klikniNaCookie() {

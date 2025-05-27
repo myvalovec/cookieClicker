@@ -47,6 +47,7 @@ a{
   height: 6px;
   border-radius: 50%;
   background: white;
+  background-image: "./obrazky/ministr.jpg";
   pointer-events: none;
   opacity: 1;
   transform: translate(0, 0);

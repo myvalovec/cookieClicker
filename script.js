@@ -20,7 +20,7 @@ let body = 0; //zakladni kapital
 
 function clickAnimation() {
   image = document.getElementById("cookie");
-  image.style.transform = "scale(0.95)";
+  image.style.transform = "scale(0.98)";
   setTimeout(() => {
     image.style.transform = "scale(1)";
   }, 50);
@@ -167,10 +167,11 @@ function otroci() {
   for(i = 0; i < incomes.length; i++) {
     body += incomes[i];
     incomesSum += incomes[i];
+    if(incomesSum != 0) {
+      clickAnimation();
+    }
   }
-  if(incomesSum != 0) {
-    clickAnimation();
-  }
+  
   document.getElementById("body").innerText = body;
   document.getElementById('lp').innerHTML = "";
   update();
@@ -199,9 +200,9 @@ function clicked(number, type) {
     update();
   }
 }
-//slideshadow
+//slideshow
 let postavy = document.getElementById("postavy")
-let interval = setInterval(intervalFunc, 1000)
+let interval = setInterval(intervalFunc, 1250)
 let obrazek = 0
 function intervalFunc(){
   if(obrazek < images.length){

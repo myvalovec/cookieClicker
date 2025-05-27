@@ -19,16 +19,18 @@ let clickIncomes = 1
 let body = 0; //zakladni kapital
 
 function clickAnimation() {
-  image = document.getElementById("cookie");
+ image = document.getElementById("cookie");
   image.style.transform = "scale(0.98)";
+
   const rect = image.getBoundingClientRect();
   const centerX = rect.left + rect.width / 2;
   const centerY = rect.top + rect.height / 2;
 
   // Vytvoření více částic
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 300; i++) {
     createParticle(centerX, centerY);
   }
+  
   setTimeout(() => {
     image.style.transform = "scale(1)";
   }, 50);
@@ -39,11 +41,11 @@ function createParticle(x, y) {
     particle.classList.add("particle");
 
     // Náhodný směr
-    const angle = Math.random()-2;
-    const distance = Math.random() * 80 + 20;
+    const angle = Math.random()/2-1.8;
+    const distance = Math.random() * 500;
 
-    const xOffset = Math.cos(angle) * distance + "px";
-    const yOffset = Math.sin(angle) * distance + "px";
+    const xOffset = Math.cos(angle) * distance-12 + "px";
+    const yOffset = Math.sin(angle) * distance-20 + "px";
 
     particle.style.left = `${x}px`;
     particle.style.top = `${y}px`;

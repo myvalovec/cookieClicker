@@ -6,6 +6,8 @@ const additives = [1, 2, 3, 5, 8, 10]
 let progress = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 let incomesSum = 0;
+let boughtImages = [];
+
 
 let clickNames = ["Kliknutí +2"]
 let clickImages = ["./obrazky/vojtik.jpg"]
@@ -31,7 +33,19 @@ function naPana() {
 function spink() {
   document.getElementById("cookie").src = "./obrazky/spink.jpg"
 }
+function reloadRp(number) {
+  const container = document.getElementById('rp');
+  container.innerHTML = '';
+  for(i = 0; i < boughtImages.length; i++) {
+    const img = document.createElement('img');
+    img.src = images[number];
+    img.style.width = '50px';
+    img.style.height = '50px';
 
+    container.append(img);d
+  }
+  
+}
 //pridani obrazku vylepseni do praveho panelu
 function addImage(number) {
   const container = document.getElementById('rp');

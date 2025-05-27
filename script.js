@@ -20,10 +20,10 @@ let body = 0; //zakladni kapital
 
 function clickAnimation() {
   image = document.getElementById("cookie");
-  image.style.transform = "scale(0.95) translateY(2px)";
+  image.style.transform = "scale(0.95)";
   setTimeout(() => {
-    image.style.transform = "scale(1) translateY(0)";
-  }, 100);
+    image.style.transform = "scale(1)";
+  }, 50);
 }
 
 //pridani bodu po kliknuti na ministra
@@ -167,6 +167,9 @@ function otroci() {
   for(i = 0; i < incomes.length; i++) {
     body += incomes[i];
     incomesSum += incomes[i];
+  }
+  if(incomesSum != 0) {
+    clickAnimation();
   }
   document.getElementById("body").innerText = body;
   document.getElementById('lp').innerHTML = "";

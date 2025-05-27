@@ -39,7 +39,7 @@ function createParticle(x, y) {
     particle.classList.add("particle");
 
     // Náhodný směr
-    const angle = Math.random() * 2 * Math.PI;
+    const angle = Math.random()-2;
     const distance = Math.random() * 80 + 20;
 
     const xOffset = Math.cos(angle) * distance + "px";
